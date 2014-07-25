@@ -1,0 +1,2 @@
+adb devices 
+pause

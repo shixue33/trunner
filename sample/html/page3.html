@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="../style.css"/>
+ <script type="text/javascript" src="../jquery.1.9.1.min.js"></script>
+ <script type="text/javascript" src="../highcharts.js"></script>
+<script type="text/javascript" src="../exporting.js"></script>
+<script>$(function () { $('#container').highcharts(#function.customMultiDate2#);});</script> 
+<title>LastPage</title>
+ </head>
+ <div class="container">
+     <div class="header">
+      <div class="logoDiv">
+          <span class="logo"><a href="../index.html" target="_self">Autotest Results</a></span>
+             <span class="pageLink r125 mr20">
+                 <a href="../#test.no#.html" target="_self">PrePage</a>
+             </span>
+             <span class="pageLink r0">
+                 <a href="../index.html" target="_self">HomePage</a>
+             </span>
+      </div>
+         
+     </div>
+     <div class="page3_info">
+      <div class="list_title">
+          <p class="w180">设备</p>
+             <p class="w180">DevicesID</p>
+             <p class="w180">用例类名</p>
+             <p class="w180">方法名</p>
+             <p class="w120">结果</p>
+             <p class="w120">耗时</p>
+         </div>
+         <div class="list_title">
+          <p class="w180">#test.deviceName#</p>
+             <p class="w180">#test.deviceSerial#</p>
+             <p class="w180">#funtion.className#</p>
+             <p class="w180">#function.funcName#</p>
+             <p class="w120">#function.result#</p>
+             <p class="w120">#function.totalTime#</p>
+         </div>
+     </div>
+     <div>
+      <ul class="imgUl">
+          #for#
+   	<a href="#function.picPath#">
+	<li>
+              <img src="#function.picPath#"/>
+                 <span>#function.picName#</span>
+             </li>
+	</a>
+              #for#
+         </ul>
+     </div>
+     <div class="logInfo">
+      <div>
+             <span>CustomDate:</span>
+             <p>#function.cunstomDate#
+             </p>
+	#function.customMultiDate#
+         </div>
+     </div>
+	 <div class="logInfo">
+      <div>
+             <span>Log:</span>
+             <p>#function.log#
+             </p>
+         </div>
+     </div>
+ </div>
+ <body>
+ </body>
+ </html>

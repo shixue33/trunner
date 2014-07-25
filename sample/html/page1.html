@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" href="style.css"/>
+ <script type="text/javascript" src="jquery.1.9.1.min.js"></script>
+ <title>MainPage</title>
+ </head>
+
+<body>
+ <div class="container">
+     <div class="header">
+      <div class="logoDiv">
+          <span class="logo"><a href="index.html" target="_self">Autotest Results</a></span>
+      </div>
+     </div>
+     <div class="body">
+      <div class="list_title">
+          <p class="w220">结束时间</p>
+             <p class="w180">测试包名</p>
+             <p class="w220">设备</p>
+             <p class="w80">用例数</p>
+             <p class="w80">成功</p>
+             <p class="w80">失败</p>
+             <p class="w80">耗时</p>
+         </div>
+         <ul>
+<insert>
+          <forInsert>
+   	<a href= "#test.no#.html"><li>
+              <p class="w220">#test.finishTime#</p>
+                 <p class="w180">#test.apkName#</p>
+   <p class="w220">#test.deviceName#</p>
+                 <p class="w80">#test.totalNum#</p>
+                 <p class="w80">#test.successNum#</p>
+                 <p class="w80 error">#test.failNum#</p>
+                 <p class="w80">#test.totalTime#</p>
+                
+             </li></a>
+             <forInsert>
+	   
+         </ul>
+     </div>
+ </div>
+ 
+ </body>
+ </html>

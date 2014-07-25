@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <style type=text/css>
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	padding:10px 0 0 0;
+	margin:0;
+	font-size:12px;
+	font-family:"microsoft yahei","Verdana","Tahoma","Arial";
+	background:rgb(255,255,255);
+}
+a{
+	cursor:pointer;
+	outline:none;
+	text-decoration:none;
+	color:rgb(27,184,223);
+	transition:all .15s ease-in-out;
+	-o-transition:all .15s ease-in-out;
+	-ms-transition:all .15s ease-in-out;
+	-moz-transition:all .15s ease-in-out;
+	-webkit-transition:all .15s ease-in-out;
+}
+a:hover{
+	cursor:pointer;
+	text-decoration:none;
+	color:rgb(9,158,196);
+	transition:all .15s ease-in-out;
+	-o-transition:all .15s ease-in-out;
+	-ms-transition:all .15s ease-in-out;
+	-moz-transition:all .15s ease-in-out;
+	-webkit-transition:all .15s ease-in-out;
+	
+}
+a:active{
+	outline:none;
+	text-decoration:none;
+}
+ul{
+	padding-left:0;
+	list-style-type:none;
+}
+ul li{
+	border-top:none;
+	border-bottom:1px solid #ccc;
+	width:100%;
+	float:left;
+	list-style-type:none;
+	background:#4473C5;
+}
+
+ul li:nth-child(odd){
+	background:#7497CD;
+}
+ul li:nth-child(even){
+	background:#3A6CC5;
+}
+ul li.error{
+	background:red;
+}
+ul li:hover{
+	background:#CCC;
+	cursor:pointer;
+}
+
+.container{
+	width:85%;
+	margin:auto;
+}
+.header{
+	height: 80px;
+	width: 100%;
+	position: relative;
+}
+.logoDiv{
+	width:60%;
+	height:100%;
+	background:#4473C5;
+	color:#fff;
+	cursor:pointer;
+}
+.logo{
+	line-height: 80px;
+	font-size: 32px;
+	padding-left:16px;
+}
+.logo a{
+	color:#fff;
+}
+.logo a:hover{
+	color:#E4E2E2;
+}
+.body{
+	padding-top:20px;
+}
+.list_title{
+	border: 1px solid #ccc;
+	height: 42px;
+	background-color: #5D81CB;
+}
+.list_title p{
+	float:left;
+	width:100px;
+	font-size:16px;
+	text-align:center;
+	margin:10px 0;
+	color:#fff;
+}
+.list_title .w220,.w220{width:220px;}
+.list_title .w280,.w280{width:280px;}
+.list_title .w180,.w180{width:180px;}
+.list_title .w120,.w120{width:120px;}
+.list_title .w280,.w280{width:280px;}
+
+.list_title .w50,.w50{width:50px;}
+.list_title .w100,.w100{width:100px;}
+
+
+
+ul li p{
+	word-wrap:break-word;
+	float:left;
+	font-size:16px;
+	text-align:center;
+	margin:10px 0;
+	color:#fff;
+}
+ul li p.error{
+	color:red;
+}
+.pageLink{
+	position: absolute;
+	height: 40px;
+	background: #2E74BA;
+	width: 120px;
+	line-height: 40px;
+	font-size: 16px;
+	padding:0 10px;
+}
+.pageLink a{
+	color:#fff;
+}
+.r0{right:0;}
+.r125{right:125px;}
+.mr20{margin-right:20px;}
+.infoDiv{
+	margin-top: 20px;
+	width:75%;
+}
+.page3_info{
+	margin-top: 20px;
+	width:85%;
+}
+.imgUl li:nth-child(odd),.imgUl li:nth-child(even),.imgUl li:hover{
+	background:#fff;
+	border:1px solid #ccc;
+}
+.imgUl li{
+	float:left;
+	text-align:center;
+	width:320px;
+	height:220px;
+}
+.imgUl li img{
+	
+	width:100%;
+}
+.imgUl li span{
+	line-height:42px;
+	font-size:14px;
+}
+.logInfo{
+	margin-top: 20px;
+	width: 85%;
+	float: left;
+	background: #5D81CB;
+	margin-bottom: 20px;
+	font-size: 14px;
+	
+	padding: 10px;
+	border: 1px solid #ccc;
+	color:#fff;
+}
+.logInfo span{
+	font-size:16px;
+	font-weight: bold;
+}
+</style>
+ <script type="text/javascript" src="jquery.1.9.1.min.js"></script>
+ <title>PageOne</title>
+ </head>
+ <body>
+ <div class="container">
+     <div class="header">
+      <div class="logoDiv">
+          <span class="logo"><a href="index.html" target="_self">Autotest Results</a></span>
+             <span class="pageLink r0">
+                 <a href="index.html" target="_self">HomePage</a>
+             </span>
+      </div>
+         
+     </div>
+     <div class="infoDiv">
+      <div class="list_title">
+          <p class="w120">设备</p>
+             <p class="w120">DevicesID</p>
+             <p class="w100">总用例数</p>
+             <p class="w50">成功</p>
+             <p class="w50">失败</p>
+             <p class="w100">耗时</p>
+         </div>
+         <div class="list_title">
+          <p class="w120">#test.deviceName#</p>
+             <p class="w120">#test.deviceSerial#</p>
+             <p class="w100">#test.totalNum#</p>
+             <p class="w50">#test.successNum#</p>
+             <p class="w50">#test.failNum#</p>
+             <p class="w50">#test.totalTime#</p>
+         </div>
+     </div>
+     <div class="body">
+      <div class="list_title">
+          <p class="w180">类名</p>
+             <p class="w50">方法名</p>
+             <p class="w100">执行次数</p>
+             <p class="w100">失败次数</p>
+             <p class="w100">结果</p>
+             <p class="w100">错误原因</p>
+         </div>
+         <ul>
+          #for#
+   	<a href="#fuctionClassNamePath#">
+	<li#errorFlag#>
+              <p class="w180">#funtion.className#</p>
+                 <p class="w50">#function.funcName#</p>
+     <p class="w100">#funtion.excutions#</p>
+                 <p class="w100">#funtion.failNum#</p>
+                 <p class="w100">#function.result#</p>
+                 <p class="w100">#function.shortMsg#</p>                
+             </li>
+	</a>
+             #for#
+         </ul>
+     </div>
+ </div>
+ 
+ </script>
+ </body>
+ </html>
